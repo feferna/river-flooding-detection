@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
+    <title>Flash Flooding Alert System - São Carlos-SP</title>
+{% endblock %}
+
+{% block body %}
+    <!-- Header -->
+    <div class="header">
+        <img id="logo" src="./static/logo_icmc_usp.png" style="width:10%">
+        <h1>River Flooding Alert System - São Carlos - SP - Brazil</h1>
+        <p id="display_river_A_level"></p>
+        <p id="display_river_B_level"></p>
+        <p id="flood_alert">There is NO Flood Alert at the moment.</p>
+    </div>
+
+    <!-- Photo Grid -->
+    <div class="row">
+        <div class="column">
+            <div class="img_title">
+                <p>River Level Detection at SHOPPING</p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="img_title">
+                <p>River Level Detection at SESC</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <img id="river_A_level_id" alt="River A Level" style="width:100%">
+        </div>
+
+        <div class="column">
+            <img id="river_B_level_id" alt="River B Level" style="width:100%">
+        </div>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+{% endblock %}

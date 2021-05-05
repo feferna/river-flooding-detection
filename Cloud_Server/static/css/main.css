@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: white;
+    margin: 2px;
+    font-family: Arial;
+    text-align: center;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 32px;
+  }
+
+  .img_title {
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 40%;
+    padding: 10px;
+    vertical-align: middle;
+  }
+  
+  .column img {
+    margin-top: 12px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
